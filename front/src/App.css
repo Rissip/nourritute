@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.meal-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meal-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.meal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.meal-details {
+  padding: 10px;
+}
+
+.meal-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.add-to-favorites {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-favorites:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 992px) {
+  .meal-item {
+    width: calc(33.33% - 10px);
+  }
+}
+.search-container {
+  margin-bottom: 20px;
+}
